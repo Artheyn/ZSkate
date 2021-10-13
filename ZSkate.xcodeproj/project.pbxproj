@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		622CEB0D2716351800AB536E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB0C2716351800AB536E /* AppDelegate.swift */; };
 		622CEB0F2716351800AB536E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB0E2716351800AB536E /* SceneDelegate.swift */; };
-		622CEB112716351800AB536E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB102716351800AB536E /* ViewController.swift */; };
 		622CEB142716351800AB536E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622CEB122716351800AB536E /* Main.storyboard */; };
 		622CEB162716351D00AB536E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622CEB152716351D00AB536E /* Assets.xcassets */; };
 		622CEB192716351D00AB536E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622CEB172716351D00AB536E /* LaunchScreen.storyboard */; };
 		622CEB242716351E00AB536E /* ZSkateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB232716351E00AB536E /* ZSkateTests.swift */; };
 		622CEB2E2716351E00AB536E /* ZSkateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB2D2716351E00AB536E /* ZSkateUITests.swift */; };
 		622CEB302716351E00AB536E /* ZSkateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB2F2716351E00AB536E /* ZSkateUITestsLaunchTests.swift */; };
-		622CEB3D2716354000AB536E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB3C2716354000AB536E /* MapViewController.swift */; };
+		622CEB4C2717776000AB536E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB4B2717776000AB536E /* MapViewController.swift */; };
+		622CEB5227178E6700AB536E /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB5127178E6700AB536E /* Double+Round.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		622CEB092716351800AB536E /* ZSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		622CEB0C2716351800AB536E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		622CEB0E2716351800AB536E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		622CEB102716351800AB536E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		622CEB132716351800AB536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		622CEB152716351D00AB536E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		622CEB182716351D00AB536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +49,8 @@
 		622CEB292716351E00AB536E /* ZSkateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSkateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		622CEB2D2716351E00AB536E /* ZSkateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSkateUITests.swift; sourceTree = "<group>"; };
 		622CEB2F2716351E00AB536E /* ZSkateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSkateUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		622CEB3C2716354000AB536E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		622CEB4B2717776000AB536E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		622CEB5127178E6700AB536E /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 			children = (
 				622CEB0C2716351800AB536E /* AppDelegate.swift */,
 				622CEB0E2716351800AB536E /* SceneDelegate.swift */,
-				622CEB102716351800AB536E /* ViewController.swift */,
-				622CEB3C2716354000AB536E /* MapViewController.swift */,
+				622CEB5027178E5B00AB536E /* Extensions */,
+				622CEB4A2717776000AB536E /* Map */,
 				622CEB122716351800AB536E /* Main.storyboard */,
 				622CEB152716351D00AB536E /* Assets.xcassets */,
 				622CEB172716351D00AB536E /* LaunchScreen.storyboard */,
@@ -128,6 +128,22 @@
 				622CEB2F2716351E00AB536E /* ZSkateUITestsLaunchTests.swift */,
 			);
 			path = ZSkateUITests;
+			sourceTree = "<group>";
+		};
+		622CEB4A2717776000AB536E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				622CEB4B2717776000AB536E /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		622CEB5027178E5B00AB536E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				622CEB5127178E6700AB536E /* Double+Round.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622CEB112716351800AB536E /* ViewController.swift in Sources */,
 				622CEB0D2716351800AB536E /* AppDelegate.swift in Sources */,
 				622CEB0F2716351800AB536E /* SceneDelegate.swift in Sources */,
-				622CEB3D2716354000AB536E /* MapViewController.swift in Sources */,
+				622CEB4C2717776000AB536E /* MapViewController.swift in Sources */,
+				622CEB5227178E6700AB536E /* Double+Round.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +459,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3PL2WU4YA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZSkate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -455,7 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iadvize.ZSkate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artheyn.ZSkate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,6 +487,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3PL2WU4YA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZSkate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -482,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iadvize.ZSkate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artheyn.ZSkate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
