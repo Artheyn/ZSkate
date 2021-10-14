@@ -21,6 +21,7 @@ enum LinearInterpolationAttributes {
 // MARK: - MapViewModel
 protocol MapViewModelDelegate: AnyObject {
     func viewModelDidCompute(zenlySkateCoordinate: CLLocationCoordinate2D)
+    func viewModelDidCompute(zenlySkateAngle: Double)
 }
 
 class MapViewModel {
@@ -122,6 +123,8 @@ extension MapViewModel {
             return
         }
 
+        computeAngleBetween(start: start, destination: destination)
+
         let startTime = DispatchTime.now()
 
         let distance = CLLocation(latitude: start.latitude, longitude: start.longitude).distance(from: CLLocation(latitude: destination.latitude, longitude: destination.longitude))
@@ -139,6 +142,11 @@ extension MapViewModel {
 
             self.linearInterpolation(start: start, destination: destination, startTime: startTime, endTime: endTime)
         }
+    }
+
+    private func computeAngleBetween(start: CLLocationCoordinate2D, destination: CLLocationCoordinate2D) {
+        let deg = start.heading(to: destination)
+        delegate?.viewModelDidCompute(zenlySkateAngle: deg)
     }
 
     private func linearInterpolation(start: CLLocationCoordinate2D, destination: CLLocationCoordinate2D, startTime: DispatchTime, endTime: DispatchTime) {
