@@ -20,6 +20,8 @@
 		622CEB552718443C00AB536E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622CEB542718443C00AB536E /* MapKit.framework */; };
 		622CEB572718B4F000AB536E /* DispatchTime+TimeElapsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB562718B4F000AB536E /* DispatchTime+TimeElapsed.swift */; };
 		622CEB592718B71800AB536E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB582718B71800AB536E /* MapViewModel.swift */; };
+		622CEB5B2718E1EA00AB536E /* FloatingPoint+DegreesRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB5A2718E1E900AB536E /* FloatingPoint+DegreesRadians.swift */; };
+		622CEB5D2718E20D00AB536E /* CLLocationCoordinate2D+Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB5C2718E20D00AB536E /* CLLocationCoordinate2D+Heading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		622CEB542718443C00AB536E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		622CEB562718B4F000AB536E /* DispatchTime+TimeElapsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTime+TimeElapsed.swift"; sourceTree = "<group>"; };
 		622CEB582718B71800AB536E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		622CEB5A2718E1E900AB536E /* FloatingPoint+DegreesRadians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+DegreesRadians.swift"; sourceTree = "<group>"; };
+		622CEB5C2718E20D00AB536E /* CLLocationCoordinate2D+Heading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Heading.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			children = (
 				622CEB5127178E6700AB536E /* Double+Round.swift */,
 				622CEB562718B4F000AB536E /* DispatchTime+TimeElapsed.swift */,
+				622CEB5A2718E1E900AB536E /* FloatingPoint+DegreesRadians.swift */,
+				622CEB5C2718E20D00AB536E /* CLLocationCoordinate2D+Heading.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -295,10 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622CEB5D2718E20D00AB536E /* CLLocationCoordinate2D+Heading.swift in Sources */,
 				622CEB0D2716351800AB536E /* AppDelegate.swift in Sources */,
 				622CEB0F2716351800AB536E /* SceneDelegate.swift in Sources */,
 				622CEB4C2717776000AB536E /* MapViewController.swift in Sources */,
 				622CEB5227178E6700AB536E /* Double+Round.swift in Sources */,
+				622CEB5B2718E1EA00AB536E /* FloatingPoint+DegreesRadians.swift in Sources */,
 				622CEB572718B4F000AB536E /* DispatchTime+TimeElapsed.swift in Sources */,
 				622CEB592718B71800AB536E /* MapViewModel.swift in Sources */,
 			);
