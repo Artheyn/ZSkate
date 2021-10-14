@@ -17,6 +17,9 @@
 		622CEB302716351E00AB536E /* ZSkateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB2F2716351E00AB536E /* ZSkateUITestsLaunchTests.swift */; };
 		622CEB4C2717776000AB536E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB4B2717776000AB536E /* MapViewController.swift */; };
 		622CEB5227178E6700AB536E /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB5127178E6700AB536E /* Double+Round.swift */; };
+		622CEB552718443C00AB536E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622CEB542718443C00AB536E /* MapKit.framework */; };
+		622CEB572718B4F000AB536E /* DispatchTime+TimeElapsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB562718B4F000AB536E /* DispatchTime+TimeElapsed.swift */; };
+		622CEB592718B71800AB536E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622CEB582718B71800AB536E /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		622CEB2F2716351E00AB536E /* ZSkateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSkateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		622CEB4B2717776000AB536E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		622CEB5127178E6700AB536E /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
+		622CEB542718443C00AB536E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		622CEB562718B4F000AB536E /* DispatchTime+TimeElapsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTime+TimeElapsed.swift"; sourceTree = "<group>"; };
+		622CEB582718B71800AB536E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622CEB552718443C00AB536E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,7 @@
 				622CEB222716351E00AB536E /* ZSkateTests */,
 				622CEB2C2716351E00AB536E /* ZSkateUITests */,
 				622CEB0A2716351800AB536E /* Products */,
+				622CEB532718443C00AB536E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				622CEB4B2717776000AB536E /* MapViewController.swift */,
+				622CEB582718B71800AB536E /* MapViewModel.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -142,8 +151,17 @@
 			isa = PBXGroup;
 			children = (
 				622CEB5127178E6700AB536E /* Double+Round.swift */,
+				622CEB562718B4F000AB536E /* DispatchTime+TimeElapsed.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		622CEB532718443C00AB536E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				622CEB542718443C00AB536E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +299,8 @@
 				622CEB0F2716351800AB536E /* SceneDelegate.swift in Sources */,
 				622CEB4C2717776000AB536E /* MapViewController.swift in Sources */,
 				622CEB5227178E6700AB536E /* Double+Round.swift in Sources */,
+				622CEB572718B4F000AB536E /* DispatchTime+TimeElapsed.swift in Sources */,
+				622CEB592718B71800AB536E /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
