@@ -1,5 +1,7 @@
 # ZSkate
 
+![](Preview.gif)
+
 Oh! A wild Zenly skateboard appears! 🛹⚡️
 
 A quick POC on MKPointAnnotation moving using linear interpolation algorithms.
